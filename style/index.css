@@ -6,15 +6,17 @@ html, body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: #333;
-  background-color: #fff;
+  background-color: #dedede;
   overflow: hidden auto;
   font-family: "Roboto", sans-serif;
+  position: relative;
+  min-height: 100vh;
 }
 
 header {
   height: 80%;
   width: 100%;
-  background-color: #fff;
+  background-color: #dedede;
   color: #333;
   display: flex;
   align-items: center;
@@ -104,4 +106,29 @@ footer section ul li a {
 footer section ul li a:hover {
   color: #fff;
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 200px;
+  }
+  header::before {
+    background-size: 200px;
+    width: 200px;
+    height: 150px;
+  }
+  footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 20px 0;
+    overflow: hidden;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=index.css.map */
